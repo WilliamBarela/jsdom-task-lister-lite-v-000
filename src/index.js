@@ -8,6 +8,9 @@ document.addEventListener("DOMContentLoaded", () => {
   })
   
   submitter.onclick = function(){
-    
+    let task_name = document.getElementById('new-task-description').innerText;
+    let new_task = document.createElement('li');
+    new_task.innerText = task_name;
+    tasks.appendChild(new_task);
   }
 });
